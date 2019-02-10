@@ -5,10 +5,10 @@ const schema = require('./schema/schema');
 const app = express();
 
 app.use('/graphql', expressGraphQL({
-    schema,
-    graphiql: true // only intended to be used in dev env
+  schema,
+  graphiql: true // only intended to be used in dev env
 }));
 
 app.listen(4000, () => {
-    console.log('Listening');
+  console.log('Listening');
 });
