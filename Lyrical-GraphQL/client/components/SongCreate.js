@@ -20,9 +20,7 @@ class SongCreate extends Component {
     ev.preventDefault();
     //console.log(this.props);
     this.props.mutate({
-      variables: {
-        title: this.state.title
-      },
+      variables: { title: this.state.title },
       refetchQueries: [{ query }]
     })
       .then(() => hashHistory.push('/'))
